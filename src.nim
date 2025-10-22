@@ -150,8 +150,8 @@ proc decode_message*(huff: HuffmanEncoder, encoded_message: string): string =
     for k, v in huff.encoding_dict.pairs:
         decoding_dict[v] = k
 
-    var output_string: string = ""
-    var current_code: string = "" 
+    var output_string: string
+    var current_code: string
 
     for ch in encoded_message:
         current_code = current_code & ch
