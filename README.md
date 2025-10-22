@@ -1,4 +1,4 @@
-# Кодировщик Хаффмана на c++
+# Кодировщик Хаффмана на nim
 
 ### Переписанная версия кодировщика, который уже [был мною реализован на Пайтоне](https://github.com/RosGus80/HuffmanEncoder) и [с++](https://github.com/RosGus80/cpp-huffman)
 
