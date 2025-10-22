@@ -106,15 +106,13 @@ proc huffman_encode_dict(huff: HuffmanEncoder): Table[char, string] =
         nodes_seq.sort(compare_nodes)
 
         var last_node: Node = nodes_seq[0]
-        nodes_seq.del(0)
+        nodes_seq.delete(0)
 
         for i in 0..<last_node.symbols.len:
             last_node.symbols[i].code = "0" & last_node.symbols[i].code
         
-        nodes_seq.sort(compare_nodes)
-
         var second_last_node: Node = nodes_seq[0]
-        nodes_seq.del(0)
+        nodes_seq.delete(0)
 
         for i in 0..<second_last_node.symbols.len:
             second_last_node.symbols[i].code = "1" & second_last_node.symbols[i].code
